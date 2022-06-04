@@ -10,56 +10,60 @@ function Certificate(props) {
       height="700"
       id="certificate"
     >
-      <rect
-        x="50"
-        y="25"
+      {/* <rect
+        x="95"
+        y="10"
         rx="20"
         ry="20"
         width="900"
         height="600"
         id="border"
+      /> */}
+      <image
+        x="450"
+        y="30"
+        height="80px"
+        width="120px"
+        id="logo"
+        href={logo}
       />
-      <text x="500" y="100" text-anchor="middle" fill="black" id="bodyTitle">
+      <text x="500" y="120" text-anchor="middle" fill="black" id="header">
+        VIETNAM - KOREA UNIVERSITY
+      </text>
+      <line x1="400" y1="125" x2="600" y2="125" id="titleUnderLine" />
+      <text x="500" y="200" text-anchor="middle" fill="black" id="bodyTitle">
         Certificate
       </text>
-      <text x="500" y="125" text-anchor="middle" fill="black" id="bodySubTitle">
+      <text x="500" y="255" text-anchor="middle" fill="black" id="bodySubTitle">
         of
       </text>
-      <line x1="250" y1="260" x2="750" y2="260" id="titleUnderLine" />
-      <text x="500" y="250" text-anchor="middle" fill="black" id="title">
+      <line x1="250" y1="360" x2="750" y2="360" id="titleUnderLine" />
+      <text x="500" y="350" text-anchor="middle" fill="black" id="title">
         {title}
       </text>
       <text
         x="500"
-        y="300"
+        y="400"
         text-anchor="middle"
         fill="black"
         id="subTitleHeader"
       >
         awarded to
       </text>
-      <text x="500" y="400" text-anchor="middle" fill="black" id="name">
+      <text x="500" y="500" text-anchor="middle" fill="black" id="name">
         {name}
       </text>
-      <line x1="200" y1="410" x2="800" y2="410" id="titleUnderLine" />
-      <text x="500" y="440" text-anchor="middle" fill="black" id="bodySubTitle">
+      <line x1="200" y1="510" x2="800" y2="510" id="titleUnderLine" />
+      <text x="500" y="540" text-anchor="middle" fill="black" id="bodySubTitle">
         on
       </text>
-      <text x="500" y="500" text-anchor="middle" fill="black" id="date">
+      <text x="500" y="600" text-anchor="middle" fill="black" id="date">
         {date}
       </text>
-      <line x1="400" y1="510" x2="600" y2="510" id="titleUnderLine" />
-      <text x="100" y="575" text-anchor="start" fill="black" id="hash">
+      <line x1="400" y1="610" x2="600" y2="610" id="titleUnderLine" />
+      <text x="100" y="675" text-anchor="start" fill="black" id="hash">
         ID: {hash}
       </text>
-      <image
-        x="725"
-        y="500"
-        height="80px"
-        width="120px"
-        id="logo"
-        href={logo}
-      />
       Sorry, your browser does not support inline SVG.
     </svg>
   );

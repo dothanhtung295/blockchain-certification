@@ -15,11 +15,11 @@ if (process.env.NODE_ENV === "production") {
 }
 
 dbuser = process.env.DB_USER;
-dbpassword = process.env.DB_PASSWORD;
+dbpassword = "Cer%40dm1n";
 dbname = process.env.DB_NAME;
 
-// const mongoURL = `mongodb://${dbuser}:${dbpassword}@${dbhost}:${dbport}/${dbname}`;
-const mongoURL = `mongodb://admin:Cer%40dm1n@localhost:27017/?authMechanism=DEFAULT&authSource=certification`;
+const mongoURL = `mongodb://${dbuser}:${dbpassword}@${dbhost}:${dbport}/${dbname}`;
+// const mongoURL = `mongodb://admin:Cer%40dm1n@localhost:27017/?authMechanism=DEFAULT&authSource=certification`;
 
 mongoose.Promise = global.Promise;
 

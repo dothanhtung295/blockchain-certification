@@ -6,10 +6,17 @@ import NavBar from "./Components/NavBar";
 import Homepage from "./Components/Homepage";
 import Dashboard from "./Components/Dashboard";
 import GenerateForm from './Components/GenerateForm';
-
+import {Helmet} from "react-helmet";
 class App extends Component {
   render() {
     return (
+      <><>
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>Certificate System</title>
+          
+        </Helmet>
+      </>
       <div className="App" style={{ backgroundColor: "#fafafa" }}>
         <NavBar />
         <Switch>
@@ -18,7 +25,7 @@ class App extends Component {
           <Route path="/generate-certificate" component={GenerateForm} />
           <Route path="/display/certificate/:id" component={Dashboard} />
         </Switch>
-      </div>
+      </div></>
     );
   }
 }
