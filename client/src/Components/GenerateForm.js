@@ -126,6 +126,7 @@ class GenerateForm extends React.Component {
             currentState: "validate",
             certificateId: data.data.certificateId
           });
+
       })
       .catch(err => console.log(err));
   };
@@ -259,7 +260,7 @@ class GenerateForm extends React.Component {
                     color="inherit"
                     className={classes.submitBtn}
                   >
-                    Certificate genrated with id {certificateId}
+                    Certificate genrated with id <a x="500" y="700" href={'/display/certificate/' +certificateId}>{certificateId}</a>
                   </Typography>
                 )}
               </Grid>
